@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="snap-y snap-mandatory h-screen overflow-y-auto">
+    <main className="relative">
       {/* ===== HERO SECTION ===== */}
-      <section className="h-screen flex flex-col justify-center px-8 snap-start">
+      <section className="min-h-screen flex flex-col justify-center px-8">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Hero - Title Block */}
           <div className="relative">
@@ -58,10 +58,7 @@ export default function Home() {
       </section>
 
       {/* ===== ABOUT SECTION ===== */}
-      <section
-        id="about"
-        className="h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900 snap-start"
-      >
+      <section id="about" className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto space-y-16">
           {/* About - Introduction Block */}
           <div className="space-y-6">
@@ -224,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* ===== PROJECTS SECTION ===== */}
-      <section id="projects" className="min-h-screen px-8 py-20 snap-start">
+      <section id="projects" className="min-h-screen px-8 py-20">
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Projects - Section Header */}
           <div className="space-y-6">
@@ -261,7 +258,7 @@ export default function Home() {
                   </h4>
                   <div className="grid grid-cols-2 gap-2">
                     <span className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300">
-                      Next.js 14
+                      Next.js 15
                     </span>
                     <span className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300">
                       React
@@ -321,10 +318,7 @@ export default function Home() {
       </section>
 
       {/* ===== CONTACT SECTION ===== */}
-      <section
-        id="contact"
-        className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900 snap-start"
-      >
+      <section id="contact" className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Contact - Section Header */}
           <div className="space-y-6">
@@ -412,6 +406,71 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ===== FOOTER SECTION ===== */}
+      <footer className="px-8 py-12 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Footer - Brand */}
+            <div className="space-y-4">
+              <h3 className="text-lg font-medium text-black dark:text-white">
+                Thomas Curtis
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Full-Stack Developer
+              </p>
+            </div>
+
+            {/* Footer - Quick Links */}
+            <div className="space-y-4">
+              <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                QUICK LINKS
+              </h3>
+              <div className="flex flex-col space-y-2">
+                <a 
+                  href="#about" 
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+                >
+                  About
+                </a>
+                <a 
+                  href="#projects" 
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+                >
+                  Projects
+                </a>
+                <a 
+                  href="#contact" 
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+
+            {/* Footer - Copyright */}
+            <div className="space-y-4">
+              <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                BUILT WITH
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-400">
+                  Next 15
+                </span>
+                <span className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-400">
+                  React
+                </span>
+                <span className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-400">
+                  Tailwind CSS
+                </span>
+              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-400 pt-4">
+                © {new Date().getFullYear()} Thomas Curtis. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
