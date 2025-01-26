@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -8,8 +9,6 @@ export default function Home() {
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Hero - Title Block */}
           <div className="relative">
-            {/* Decorative Line */}
-            <div className="absolute -left-4 top-1/2 w-1 h-16 bg-black dark:bg-white transform -translate-y-1/2" />
             <h1 className="text-5xl md:text-7xl font-bold mb-2 text-black dark:text-white font-geist-sans leading-tight">
               Harnessing the Zen of{" "}
               <span className="text-red-600 dark:text-red-400">
@@ -23,42 +22,19 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300">
               Thomas Curtis,{" "}
               <span className="text-black dark:text-white">
-                full-stack developer
+                full-stack engineer
               </span>{" "}
-              balancing creativity and precision.
+              balancing creativity with technical techniques.
             </h2>
           </div>
-
-          {/* Hero - Description Block */}
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
-            Drawing on the principles of martial arts -{/* Core Values */}
-            <span className="text-black dark:text-white font-medium">
-              Patience
-            </span>
-            ,{" "}
-            <span className="text-black dark:text-white font-medium">
-              Perseverance
-            </span>
-            ,{" "}
-            <span className="text-black dark:text-white font-medium">
-              Practice Hard
-            </span>
-            ,{" "}
-            <span className="text-black dark:text-white font-medium">
-              Practice exactly the way you want to perform
-            </span>
-            , and{" "}
-            <span className="text-black dark:text-white font-medium">
-              Meditation
-            </span>{" "}
-            — I create seamless digital experiences that flow effortlessly for
-            end users.
-          </p>
         </div>
       </section>
 
       {/* ===== ABOUT SECTION ===== */}
-      <section id="about" className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900">
+      <section
+        id="about"
+        className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900"
+      >
         <div className="max-w-4xl mx-auto space-y-16">
           {/* About - Introduction Block */}
           <div className="space-y-6">
@@ -73,13 +49,11 @@ export default function Home() {
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
               I'm Thomas Curtis, a full-stack developer with a unique background
               in martial arts—channeling discipline and precision into every
-              project. Guided by the principles of patience, perseverance, hard
-              practice, performing exactly as I train, and mindful meditation, I
-              strive for continuous improvement in both code and character.
-              After earning my B.S. in Software Engineering from Bowling Green
-              State University, I've dedicated myself to crafting robust,
-              innovative solutions that reflect my unwavering commitment to
-              detail and excellence.
+              project. I strive for continuous improvement in both code and
+              character. After earning my B.S. in Software Engineering from
+              Bowling Green State University, I've dedicated myself to crafting
+              robust, innovative solutions that reflect my unwavering commitment
+              to detail and excellence.
             </p>
           </div>
 
@@ -243,7 +217,7 @@ export default function Home() {
                   Personal Software Portfolio
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  A minimalist portfolio showcasing my journey as a developer,
+                  A software portfolio showcasing my journey as a developer,
                   built with modern web technologies and clean design
                   principles.
                 </p>
@@ -293,22 +267,22 @@ export default function Home() {
 
               {/* Card - Action Links */}
               <div className="p-6 pt-0 flex gap-4 mt-auto">
-                <a
-                  href="https://github.com/yourusername/portfolio"
+                <Link
+                  href="https://github.com/thomasvcurtis/software-portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                 >
                   View Source →
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://yourportfolio.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                 >
                   Visit Site →
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -318,7 +292,10 @@ export default function Home() {
       </section>
 
       {/* ===== CONTACT SECTION ===== */}
-      <section id="contact" className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900">
+      <section
+        id="contact"
+        className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900"
+      >
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Contact - Section Header */}
           <div className="space-y-6">
@@ -341,12 +318,12 @@ export default function Home() {
                   <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                     EMAIL
                   </h3>
-                  <a
+                  <Link
                     href="mailto:your.email@example.com"
                     className="text-lg text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                   >
                     girdles.session_0t@icloud.com
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Location Block */}
@@ -380,7 +357,7 @@ export default function Home() {
                   </h3>
                   <div className="flex gap-6">
                     {/* LinkedIn */}
-                    <a
+                    <Link
                       href="https://linkedin.com/in/thomasvcurtis"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -395,10 +372,10 @@ export default function Home() {
                           className="dark:invert w-full h-full object-contain"
                         />
                       </div>
-                    </a>
+                    </Link>
 
                     {/* GitHub */}
-                    <a 
+                    <Link
                       href="https://github.com/thomasvcurtis"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -413,7 +390,7 @@ export default function Home() {
                           className="dark:invert w-full h-full object-contain"
                         />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -442,24 +419,24 @@ export default function Home() {
                 QUICK LINKS
               </h3>
               <div className="flex flex-col space-y-2">
-                <a 
-                  href="#about" 
+                <Link
+                  href="#about"
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
                 >
                   About
-                </a>
-                <a 
-                  href="#projects" 
+                </Link>
+                <Link
+                  href="#projects"
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
                 >
                   Projects
-                </a>
-                <a 
-                  href="#contact" 
+                </Link>
+                <Link
+                  href="#contact"
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
 
