@@ -5,8 +5,11 @@ export default function Home() {
   return (
     <main className="relative">
       {/* ===== HERO SECTION ===== */}
-      <section className="min-h-screen flex flex-col justify-center px-8">
-        <div className="max-w-4xl mx-auto space-y-8">
+      <section className="min-h-screen flex flex-col justify-center px-8 dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative">
+        {/* Radial gradient overlay */}
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        
+        <div className="max-w-4xl mx-auto space-y-8 relative z-10">
           {/* Hero - Title Block */}
           <div className="relative">
             <h1 className="text-5xl md:text-7xl font-bold mb-2 text-black dark:text-white font-geist-sans leading-tight">
@@ -29,6 +32,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+    
 
       {/* ===== ABOUT SECTION ===== */}
       <section
