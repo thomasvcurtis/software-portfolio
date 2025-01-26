@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]">
+      {/* Radial gradient overlay that spans the whole page */}
+      <div className="fixed pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      
       {/* ===== HERO SECTION ===== */}
-      <section className="min-h-screen flex flex-col justify-center px-8 dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative">
-        {/* Radial gradient overlay */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        
+      <section className="min-h-screen flex flex-col justify-center px-8 relative">
         <div className="max-w-4xl mx-auto space-y-8 relative z-10">
           {/* Hero - Title Block */}
           <div className="relative">
@@ -37,7 +37,7 @@ export default function Home() {
       {/* ===== ABOUT SECTION ===== */}
       <section
         id="about"
-        className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900"
+        className="min-h-screen px-8 py-20 bg-gray-50/80 dark:bg-gray-900/80 relative z-10"
       >
         <div className="max-w-4xl mx-auto space-y-16">
           {/* About - Introduction Block */}
@@ -199,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* ===== PROJECTS SECTION ===== */}
-      <section id="projects" className="min-h-screen px-8 py-20">
+      <section id="projects" className="min-h-screen px-8 py-20 relative z-10">
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Projects - Section Header */}
           <div className="space-y-6">
@@ -298,7 +298,7 @@ export default function Home() {
       {/* ===== CONTACT SECTION ===== */}
       <section
         id="contact"
-        className="min-h-screen px-8 py-20 bg-gray-50 dark:bg-gray-900"
+        className="min-h-screen px-8 py-20 bg-gray-50/80 dark:bg-gray-900/80 relative z-10"
       >
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Contact - Section Header */}
@@ -404,7 +404,7 @@ export default function Home() {
       </section>
 
       {/* ===== FOOTER SECTION ===== */}
-      <footer className="px-8 py-12 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800">
+      <footer className="px-8 py-12 bg-white/80 dark:bg-black/80 border-t border-gray-200 dark:border-gray-800 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Footer - Brand */}
