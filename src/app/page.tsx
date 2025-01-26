@@ -345,19 +345,24 @@ export default function Home() {
                     href="mailto:your.email@example.com"
                     className="text-lg text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                   >
-                    your.email@example.com
+                    girdles.session_0t@icloud.com
                   </a>
                 </div>
 
                 {/* Location Block */}
-                <div className="space-y-2">
+                <div className="space-y-4">
                   <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                     LOCATION
                   </h3>
-                  <div className="flex items-center gap-3">
-                    {/* TODO: Add Ohio state icon/image */}
-                    <div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-md">
-                      {/* Placeholder for Ohio state icon */}
+                  <div className="flex flex-col items-start gap-4">
+                    <div className="w-40 h-40 rounded-lg flex items-center justify-center">
+                      <Image
+                        src="/ohio.png"
+                        alt="Ohio State"
+                        width={1000}
+                        height={1000}
+                        className="dark:invert w-full h-full object-contain"
+                      />
                     </div>
                     <span className="text-lg text-black dark:text-white">
                       Ohio, United States
@@ -369,11 +374,11 @@ export default function Home() {
               {/* Contact - Right Column */}
               <div className="space-y-8">
                 {/* Social Links */}
-                <div className="space-y-2">
+                <div className="space-y-4">
                   <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                     CONNECT
                   </h3>
-                  <div className="flex gap-4">
+                  <div className="flex gap-6">
                     {/* LinkedIn */}
                     <a
                       href="https://linkedin.com/in/thomasvcurtis"
@@ -381,22 +386,32 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="group"
                     >
-                      {/* TODO: Add LinkedIn icon */}
-                      <div className="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center transition-colors group-hover:bg-gray-300 dark:group-hover:bg-gray-600">
-                        {/* Placeholder for LinkedIn icon */}
+                      <div className="w-40 h-40 rounded-lg flex items-center justify-center">
+                        <Image
+                          src="/linkedIn.png"
+                          alt="LinkedIn Logo"
+                          width={1000}
+                          height={1000}
+                          className="dark:invert w-full h-full object-contain"
+                        />
                       </div>
                     </a>
 
                     {/* GitHub */}
-                    <a
+                    <a 
                       href="https://github.com/thomasvcurtis"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group"
                     >
-                      {/* TODO: Add GitHub icon */}
-                      <div className="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center transition-colors group-hover:bg-gray-300 dark:group-hover:bg-gray-600">
-                        {/* Placeholder for GitHub icon */}
+                      <div className="w-40 h-40 rounded-lg flex items-center justify-center">
+                        <Image
+                          src="/github.png"
+                          alt="GitHub Logo"
+                          width={1000}
+                          height={1000}
+                          className="dark:invert w-full h-full object-contain"
+                        />
                       </div>
                     </a>
                   </div>
