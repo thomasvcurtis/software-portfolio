@@ -1,12 +1,22 @@
+import { FlipWords } from "@/components/ui/flip-words";
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
+
+const flipWords = [
+  "Planning",
+  "Design",
+  "Development",
+  "Testing",
+  "Deployment",
+  "Maintenance",
+];
 
 export default function Home() {
   return (
     <main className="relative dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]">
       {/* Radial gradient overlay that spans the whole page */}
       <div className="fixed pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      
+
       {/* ===== HERO SECTION ===== */}
       <section className="min-h-screen flex flex-col justify-center px-8 relative">
         <div className="max-w-4xl mx-auto space-y-8 relative z-10">
@@ -15,7 +25,12 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-bold mb-2 text-black dark:text-white font-geist-sans leading-tight">
               Harnessing the Zen of{" "}
               <span className="text-red-600 dark:text-red-400">
-                Martial Arts in Code
+                Martial Arts{" "}
+              </span>
+              <span className="text-black dark:text-white">in</span>
+              <span className="text-red-600 dark:text-red-400">
+                <br></br>
+                <FlipWords words={flipWords} />
               </span>
             </h1>
           </div>
@@ -32,7 +47,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    
 
       {/* ===== ABOUT SECTION ===== */}
       <section
@@ -51,13 +65,13 @@ export default function Home() {
             </div>
             {/* About Content */}
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              {"I'm"} Thomas Curtis, a full-stack developer with a unique background
-              in martial arts—channeling discipline and precision into every
-              project. I strive for continuous improvement in both code and
-              character. After earning my B.S. in Software Engineering from
-              Bowling Green State University, {"I've"} dedicated myself to crafting
-              robust, innovative solutions that reflect my unwavering commitment
-              to detail and excellence.
+              {"I'm"} Thomas Curtis, a full-stack developer with a unique
+              background in martial arts—channeling discipline and precision
+              into every project. I strive for continuous improvement in both
+              code and character. After earning my B.S. in Software Engineering
+              from Bowling Green State University, {"I've"} dedicated myself to
+              crafting robust, innovative solutions that reflect my unwavering
+              commitment to detail and excellence.
             </p>
           </div>
 
