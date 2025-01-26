@@ -47,11 +47,11 @@ export default function Home() {
             </div>
             {/* About Content */}
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              I'm Thomas Curtis, a full-stack developer with a unique background
+              {"I'm"} Thomas Curtis, a full-stack developer with a unique background
               in martial arts—channeling discipline and precision into every
               project. I strive for continuous improvement in both code and
               character. After earning my B.S. in Software Engineering from
-              Bowling Green State University, I've dedicated myself to crafting
+              Bowling Green State University, {"I've"} dedicated myself to crafting
               robust, innovative solutions that reflect my unwavering commitment
               to detail and excellence.
             </p>
@@ -302,7 +302,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -left-4 top-1/2 w-1 h-8 bg-black dark:bg-white transform -translate-y-1/2" />
               <h2 className="text-4xl font-bold text-black dark:text-white">
-                Let's Connect
+                {"Let's"} Connect
               </h2>
             </div>
           </div>
