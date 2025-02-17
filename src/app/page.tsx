@@ -51,7 +51,7 @@ export default function Home() {
       {/* ===== ABOUT SECTION ===== */}
       <section
         id="about"
-        className="min-h-screen px-8 py-20 bg-gray-50/80 dark:bg-gray-900/80 relative z-10"
+        className="min-h-screen px-8 py-20 relative z-10"
       >
         <div className="max-w-4xl mx-auto space-y-16">
           {/* About - Introduction Block */}
@@ -312,7 +312,7 @@ export default function Home() {
       {/* ===== CONTACT SECTION ===== */}
       <section
         id="contact"
-        className="min-h-screen px-8 py-20 bg-gray-50/80 dark:bg-gray-900/80 relative z-10"
+        className="min-h-screen px-8 py-20 relative z-10"
       >
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Contact - Section Header */}
@@ -458,7 +458,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Footer - Copyright */}
+            {/* Footer */}
             <div className="space-y-4">
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 BUILT WITH
